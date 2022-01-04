@@ -1,0 +1,30 @@
+uuid: f2618f30-d1e5-47df-96a5-5cc478b7510e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_nacionalidad
+    - taxonomy.vocabulary.pais
+  module:
+    - user
+id: user.user.field_nacionalidad
+field_name: field_nacionalidad
+entity_type: user
+bundle: user
+label: Nacionalidad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pais: pais
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 07e59ec9-dd9b-4b8a-b1f1-0c0c50ecbf0a
+langcode: es
+status: true
+dependencies: {  }
+name: Pais
+vid: pais
+description: 'Nomenclador de Paises'
+weight: 0
