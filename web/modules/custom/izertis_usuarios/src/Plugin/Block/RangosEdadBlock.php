@@ -4,8 +4,6 @@ namespace Drupal\izertis_usuarios\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Locale\CountryManager;
-use Drupal\taxonomy\Entity\Term;
 
 /**
  * Provides a 'RangosEdadBlock' block.

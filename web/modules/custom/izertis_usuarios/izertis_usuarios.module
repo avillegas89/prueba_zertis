@@ -37,6 +37,12 @@ function izertis_usuarios_theme() {
         'datos' => NULL,
       ],
     ],
+    'exportar-usuarios-pdf' => [
+      'templates' => 'exportar-usuarios-pdf',
+      'variables' => [
+        'datos' => NULL,
+      ],
+    ],
   ];
 }
 

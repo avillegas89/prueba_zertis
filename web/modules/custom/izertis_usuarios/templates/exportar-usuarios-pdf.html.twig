@@ -1,0 +1,44 @@
+<style>
+  .exportar-pdf {
+    border: 1px solid #C0C0C0;
+    border-collapse: collapse;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .exportar-pdf th {
+    border: 1px solid #C0C0C0;
+    padding: 5px;
+    background: #F0F0F0;
+  }
+
+  .exportar-pdf td {
+    border: 1px solid #C0C0C0;
+    padding: 5px;
+  }
+</style>
+<table class="exportar-pdf">
+  <thead>
+  <tr>
+    <th>{{ "NOMBRE DE USUARIO"|t }}</th>
+    <th>{{ "EMAIL"|t }}</th>
+    <th>{{ "ESTADO"|t }}</th>
+    <th>{{ "ROLES"|t }}</th>
+    <th>{{ "EDAD"|t }}</th>
+    <th>{{ "NACIONALIDAD"|t }}</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for dato in datos %}
+    <tr>
+      <td>{{ dato.name }}</td>
+      <td>{{ dato.mail }}</td>
+      <td>{{ dato.status }}</td>
+      <td>{{ dato.roles }}</td>
+      <td>{{ dato.field_edad }}</td>
+      <td>{{ dato.field_nacionalidad }}</td>
+    </tr>
+  {% endfor %}
+
+  </tbody>
+</table>

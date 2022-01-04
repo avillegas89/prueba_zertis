@@ -15,12 +15,15 @@
         }
     ],
     "require": {
+        "box/spout": "^3.3",
         "composer/installers": "^1.9",
+        "dompdf/dompdf": "^1.1",
         "drupal/console": "~1.0",
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/views_block_area": "1.x-dev@dev",
+        "drupal/views_data_export": "1.0",
         "drush/drush": "^10.6"
     },
     "conflict": {

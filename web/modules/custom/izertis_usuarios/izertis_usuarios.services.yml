@@ -5,4 +5,4 @@ services:
 
   izertis_usuarios.procesamiento:
     class: Drupal\izertis_usuarios\Services\ProcesamientoIzertisUsuarios
-    arguments: ["@izertis_usuarios.repositorio"]
+    arguments: ["@izertis_usuarios.repositorio", "@renderer"]

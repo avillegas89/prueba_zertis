@@ -1,0 +1,9 @@
+
+izertis_usuarios.exportacion_usuarios_controller:
+  path: 'izertis_usuarios/exportar'
+  defaults:
+    _controller: '\Drupal\izertis_usuarios\Controller\ExportacionUsuariosController::exportar'
+    _title: 'exportar'
+  requirements:
+    _permission: 'access content'
+  methods: ['GET', 'POST']
