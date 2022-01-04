@@ -1,0 +1,9 @@
+
+
+<div class="cantidad_block">
+  <h3>{{ "Resúmen de usuarios por rangos de edad: " }}</h3>
+  {% for seccion in datos %}
+    <p><b>{{ seccion.etiqueta }}</b>: {{ seccion.cantidad }}</p>
+  {% endfor %}
+
+</div>

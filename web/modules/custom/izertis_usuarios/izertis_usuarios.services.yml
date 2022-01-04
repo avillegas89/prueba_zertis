@@ -1,0 +1,8 @@
+services:
+  izertis_usuarios.repositorio:
+    class: Drupal\izertis_usuarios\Repositorio\RepositorioService
+    arguments: ["@database", "@entity_type.manager"]
+
+  izertis_usuarios.procesamiento:
+    class: Drupal\izertis_usuarios\Services\ProcesamientoIzertisUsuarios
+    arguments: ["@izertis_usuarios.repositorio"]

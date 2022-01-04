@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Contains izertis_usuarios.module.
+ */
+
+use Drupal\Core\Locale\CountryManager;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function izertis_usuarios_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the izertis_usuarios module.
+    case 'help.page.izertis_usuarios':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Personalizacion de Usuario para iZertis') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function izertis_usuarios_theme() {
+
+  return [
+    'rangos-edad' => [
+      'templates' => 'rangos-edad',
+      'variables' => [
+        'configuracion' => NULL,
+        'datos' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_install().
+ */
+function izertis_usuarios_install($is_syncing) {
+  $paises = CountryManager::getStandardList();
+  $repositorio_propio = \Drupal::service("izertis_usuarios.repositorio");
+
+  foreach ($paises as $pais) {
+    $repositorio_propio->crearTermino('pais', $pais);
+  }
+}

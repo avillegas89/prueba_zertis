@@ -5,9 +5,7 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
-/web/libraries/codesnippet/
-/web/libraries/superfish/
-#/web/libraries/
+/web/libraries/
 
 # Ignore sensitive information
 /web/sites/*/settings.php
@@ -35,5 +33,5 @@ web/sites/example.settings.local.php
 web/sites/example.sites.php
 web/sites/README.txt
 web/sites/default/default.services.yml
-web/sites/default/default.settings.php
+web/sites/default/settings.php
 web/sites/default/settings.php

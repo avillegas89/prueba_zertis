@@ -1,0 +1,5 @@
+name: 'iZertis Usuarios'
+type: module
+description: 'Personalizacion de Usuario para iZertis'
+package: 'Custom'
+core_version_requirement: ^8.0.0 || ^9
